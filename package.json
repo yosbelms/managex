@@ -1,0 +1,43 @@
+{
+    "author": "Yosbel Marin",
+    "name": "managex",
+    "version": "0.1.0",
+    "license": "MIT",
+    "description": "Predictable state manager with zero boilerplate",
+    "repository": "https://github.com/yosbelms/managex.git",
+    "main": "./lib/index",
+    "types": "./lib/index.d.ts",
+    "scripts": {
+        "test": "./node_modules/.bin/jasmine",
+        "build": "tsc --sourceMap",
+        "watch": "tsc --sourceMap --watch",
+        "clean": "rm -f ./lib/*"
+    },
+    "keywords": [
+        "managex",
+        "store",
+        "react",
+        "reactjs",
+        "hot",
+        "reload",
+        "live",
+        "edit",
+        "flux",
+        "redux",
+        "state"
+    ],
+    "dependencies": {
+        "jasmine": "^2.9.0",
+        "prop-types": "^15.6.0"
+    },
+    "devDependencies": {
+        "@types/jasmine": "^2.5.54",
+        "@types/react": "^16.0.31",
+        "@types/react-dom": "^16.0.3",
+        "react": "^16.2.0",
+        "react-dom": "^16.2.0"
+    },
+    "peerDependencies": {
+        "react": "^16.2.0"
+    }
+}
