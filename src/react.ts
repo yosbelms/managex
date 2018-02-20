@@ -51,8 +51,8 @@ export class Observer extends Component {
       this.resetComponentState.bind(this))
   }
 
-  mapState(state: any): any {
-    return state
+  mapState(_: any): any {
+    return null
   }
 
   resetComponentState(state) {
