@@ -7,7 +7,9 @@ const contextTypes = {
   stateManager: PropTypes.any.isRequired
 }
 
-export class Provider extends Component {
+export class Provider extends Component<{
+  stateManager: any
+}> {
 
   static propTypes = {
     ...contextTypes,
@@ -55,7 +57,7 @@ export class Observer extends Component {
     return null
   }
 
-  resetComponentState(state) {
+  resetComponentState(state: any) {
     this.setState(() => this.mapState(state))
   }
 
