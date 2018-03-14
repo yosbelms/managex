@@ -24,8 +24,8 @@ export class StateManager<State> {
     this.executeAction = executeAction
   }
 
-  static from(state: any, execute) {
-    return new StateManager(state, execute)
+  static from(state, executeAction = defaultExecuteAction) {
+    return new StateManager(state, executeAction)
   }
 
   /** Sets a new state */
